@@ -3,6 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+@layer components {
+  /* Your custom components here */
+}
+
+@layer utilities {
+  /* Your custom utilities here */
+}
 body {
   font-family: 'Poppins', sans-serif;
 }

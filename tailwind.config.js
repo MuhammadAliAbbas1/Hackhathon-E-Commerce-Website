@@ -1,19 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
- 
-    // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/app/**/*.{html,js,ts,tsx}',  // Ensure this covers your .tsx files
+    './src/components/**/*.{html,js,ts,tsx}', // If you have components outside the app directory
   ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
+        sans: ['Poppins', 'sans-serif'], // Make Poppins the default sans-serif font
       },
     },
   },
   plugins: [],
-};
+}

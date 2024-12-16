@@ -18,9 +18,11 @@
         "name": "next"
       }
     ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    "baseUrl": ".", // This sets the base URL to the project root
+   "paths": {
+  "@/*": ["src/*"],
+  "@components/*": ["src/components/*"]
+}
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
