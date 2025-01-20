@@ -2,12 +2,15 @@ import React from 'react'
 import Image from 'next/image'
 import { Poppins } from '@next/font/google';
 import '../globals.css';
+import Browsetherange from '@/components/Browsetherange';
+import Ourproducts1 from '@/components/Ourproducts1';
+import Ourproducts2 from '@/components/Ourproducts2';
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'], // Add desired font weights
-  variable: '--font-poppins', // Custom CSS variable
-});
+// const poppins = Poppins({
+//   subsets: ['latin'],
+//   weight: ['400', '500', '600', '700'], // Add desired font weights
+//   variable: '--font-poppins', // Custom CSS variable
+// });
 
 function Page() {
   return (
@@ -57,56 +60,12 @@ function Page() {
 
           <div className='flex h-[546px] w-full gap-[20px] mt-[62.29px]'>
 
-            <div className='w-[381px] h-[546px]'
-            >
-              <div className="w-[381px] h-[480px] ">
-                <Image
-                  src="/images/dining.png"
-                  alt="Dining"
-                  layout="omit"
-                  width={381}
-                  height={480}
-                  className='h-[480px] w-[381px] object-cover'
-                />
-              </div>
-              <p className='text-[24px] font-[600] text-[#333333] text-center mt-[30px] font-sans'>Dining</p>
+            <Browsetherange title='Dining'/>
 
-            </div>
+            <Browsetherange title='Livng'/>
 
-            <div className='w-[381px] h-[546px]'>
+            <Browsetherange title='Bedroom'/>
 
-              <div className="w-[381px] h-[480px]">
-                <Image
-                  src="/images/living.png"
-                  alt="Dining"
-                  layout="omit"
-                  width={381}
-                  height={480}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-
-              <p className='text-[24px] font-[600] text-[#333333] text-center mt-[30px] font-sans'>Living</p>
-
-            </div>
-
-            <div className='w-[381px] h-[546px]'>
-
-
-              <div className="w-[381px] h-[480px]">
-                <Image
-                  src="/images/bedroom.png"
-                  alt="Dining"
-                  layout="omit"
-                  width={381}
-                  height={480}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-
-              <p className='text-[24px] font-[600] text-[#333333] text-center mt-[30px] font-sans'>Bedroom</p>
-
-            </div>
           </div>
         </div>
 
@@ -120,51 +79,10 @@ function Page() {
           <div className='w-full h-[446px] mt-[32px] flex gap-[33px]'>
 
 
-            <div className='w-[285px] h-full'>
+          <Ourproducts1 title='Slytherine' title2='Stylish cafe chair' discount='Rp 3.500.000'/>
+            
 
-              <div className="w-[285px] h-[301px]">
-
-                <Image
-                  src="/images/ourproducts1.png"
-                  alt="Dining"
-                  layout="omit"
-                  width={285}
-                  height={301}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              <p className='font-[600] text-[24px] leading-[28.8px] ml-[16px] mt-[16px] font-sans'>Slytherine</p>
-              <p className='mt-[8px] font-[500] text-[16px] leading-[24px] text-[#898989] ml-[16px] font-sans'>Stylish cafe chair</p>
-              <div className='w-[249px] h-[30px] ml-[16px] mt-[8px] flex'>
-
-                <p className='font-[600] text-[20px] leading-[30px] text-[#3A3A3A] font-sans'>Rp 2.500.000</p>
-                <p className='font-[400] text-[16px] leading-[24px] line-through ml-[16px] font-sans'>Rp 3.500.000</p>
-              </div>
-            </div>
-
-
-            <div className='w-[285px] h-full'>
-
-              <div className="w-[285px] h-[301px]">
-
-                <Image
-                  src="/images/ourproducts2.png"
-                  alt="Dining"
-                  layout="omit"
-                  width={285}
-                  height={301}
-                  className="h-full w-full object-cover"
-                />
-                <p className='font-[600] text-[24px] leading-[28.8px] ml-[16px] mt-[16px] font-sans'>Leviosa</p>
-                <p className='mt-[8px] font-[500] text-[16px] leading-[24px] text-[#898989] ml-[16px] font-sans'>Stylish cafe chair</p>
-                <div className='w-[249px] h-[30px] ml-[16px] mt-[8px] flex'>
-
-                  <p className='font-[600] text-[20px] leading-[30px] text-[#3A3A3A] font-sans'>Rp 2.500.000</p>
-
-                </div>
-              </div>
-            </div>
-
+          <Ourproducts2 title='Leviosa' title2='Stylish cafe chair' />
 
             <div className='w-[285px] h-full'>
 
@@ -404,6 +322,97 @@ function Page() {
 
         </div>
 
+
+        <div className="bg-white py-10">
+      <div className="w-[1440px] h-[850px] mx-auto relative">
+        <h2 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-xl font-bold mb-6">
+          Share your setup with <span className="text-black">#FuniroFurniture</span>
+        </h2>
+        <div className="grid grid-cols-12 grid-rows-6 gap-1 h-full w-full">
+          <div className="col-span-4 row-span-3 overflow-hidden">
+            <Image
+              src="/images/gridimage1.jpg"
+              alt="Grid Image 1"
+              width={1000}
+              height={1000}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="col-span-4 row-span-2 overflow-hidden">
+            <Image
+              src="/images/gridimage2.jpg"
+              alt="Grid Image 2"
+              width={1000}
+              height={500}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="col-span-4 row-span-3 overflow-hidden">
+            <Image
+              src="/images/gridimage3.jpg"
+              alt="Grid Image 3"
+              width={1000}
+              height={1000}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="col-span-2 row-span-2 overflow-hidden">
+            <Image
+              src="/images/gridimage4.jpg"
+              alt="Grid Image 4"
+              width={1000}
+              height={500}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="col-span-4 row-span-2 overflow-hidden">
+            <Image
+              src="/images/gridimage5.jpg"
+              alt="Grid Image 5"
+              width={1000}
+              height={1000}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="col-span-3 row-span-2 overflow-hidden">
+            <Image
+              src="/images/gridimage6.jpg"
+              alt="Grid Image 6"
+              width={1000}
+              height={500}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="col-span-3 row-span-2 overflow-hidden">
+            <Image
+              src="/images/gridimage7.jpg"
+              alt="Grid Image 7"
+              width={1000}
+              height={500}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="col-span-4 row-span-3 overflow-hidden">
+            <Image
+              src="/images/gridimage8.jpg"
+              alt="Grid Image 8"
+              width={1000}
+              height={500}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="col-span-5 row-span-2 overflow-hidden">
+            <Image
+              src="/images/gridimage9.jpg"
+              alt="Grid Image 9"
+              width={1000}
+              height={500}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
 
       </div>
 
