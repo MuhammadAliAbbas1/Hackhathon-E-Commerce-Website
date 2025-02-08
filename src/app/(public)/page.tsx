@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import { Poppins } from '@next/font/google';
 import '../globals.css';
 import Browsetherange from '@/components/Browsetherange';
 import Ourproducts from '@/components/Ourproducts';

@@ -53,7 +53,7 @@ function page() {
          </div>
          <div className="space-y-3">  
             <p className="font-sans font-medium text-base">Message</p>
-            <div className="w-[528px] h-[120px] border-[1px] border-[#9F9F9F] rounded-xl font-sans text-base text-[#9F9F9F] font-normal"><p className='mt-[26px] ml-[30px]'>Hi I'd like to ask about</p></div>
+            <div className="w-[528px] h-[120px] border-[1px] border-[#9F9F9F] rounded-xl font-sans text-base text-[#9F9F9F] font-normal"><p className='mt-[26px] ml-[30px]'>Hi Id like to ask about</p></div>
          </div>
          <div className='w-[237px] h-[55px] rounded-md bg-[#B88E2F] border-[1px] flex justify-center items-center text-white font-sans font-normal text-base'>Sumbit</div>
         </div>

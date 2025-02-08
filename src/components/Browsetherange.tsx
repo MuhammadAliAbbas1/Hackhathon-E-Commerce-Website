@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface BrowsetherangeProps {
@@ -8,9 +9,11 @@ function Browsetherange(props: BrowsetherangeProps) {
   return (
     <div className="w-[381px] h-[546px]">
       <div className="w-[381px] h-[480px] ">
-        <img
+        <Image
           src="/images/dining.png"
           alt="Dining"
+          width={381}
+          height={480}
           className="h-[480px] w-[381px] object-cover"
         />
       </div>
