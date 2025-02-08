@@ -2,6 +2,7 @@ import Banner from '@/components/Banner'
 import React from 'react'
 import Image from 'next/image';
 import QualityBanner from '@/components/Qualitybanner';
+import Link from 'next/link';
 
 function cart() {
   return (
@@ -41,7 +42,9 @@ function cart() {
           <p className='font-semibold text-4xl font-sans mt-[15px]'>Cart Totals</p>
           <p className='font-sans font-medium text-base mt-[61px]'>Subtotal<span className='font-sans font-normal text-base text-[#9F9F9F] ml-[62px]'>Rs. 250,000.00</span></p>
           <p className='font-sans font-medium text-base mt-[31px]'>Total<span className='font-sans font-medium text-xl text-[#B88E2F] ml-[58px]'>Rs. 250,000.00</span></p>
+          <Link href='/Checkout'>
           <div className='w-[222px] h-[58.95px] rounded-xl border-[1px] border-black flex justify-center items-center font-sans font-normal text-xl mt-[42px]'>Check Out</div>
+          </Link>
         </div>
       </div>
       <QualityBanner />
