@@ -35,7 +35,9 @@ export default function Header() {
           <TbUserExclamation size={24} style={{ color: 'black', display: 'inline-block' }} />
           <CiSearch size={24} style={{ color: 'black', display: 'inline-block' }} />
           <IoHeartOutline size={24} style={{ color: 'black', display: 'inline-block' }} />
+          <Link href="/Cart">
           <IoCartOutline size={24} style={{ color: 'black', display: 'inline-block' }} />
+          </Link>
         </div>
       </div>
     </div>
